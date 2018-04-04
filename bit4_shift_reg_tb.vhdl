@@ -23,7 +23,7 @@ signal i_shift_in, clk, enable : std_logic;
 signal sel : std_logic_vector(1 downto 0);
 begin
 --  Component instantiation.
-bit4_shift_reg_0: 4bit_shift_reg port map (I => i, I_SHIFT_IN => i_shift_in, sel => sel, clock => clk, enable => enable, O => o);
+bit4_shift_reg_0: bit4_shift_reg port map (I => i, I_SHIFT_IN => i_shift_in, sel => sel, clock => clk, enable => enable, O => o);
 
 --  This process does the real job.
 process
