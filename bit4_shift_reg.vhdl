@@ -17,7 +17,7 @@ begin
 bit4_shift_reg1: process (enable, clock, sel, I_SHIFT_IN)
 	begin
 	if(enable ='1') then
-		if(clock == '1') then
+		if(clock = '1') then
 			if(sel = "00") then
 				O <= temp; -- HOLD logic, keeps the same output value
 			elsif(sel = "01") then
